@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>rapid</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+        margin: 0px; padding: 0px;
+    }
+
+    /*Team Section
+    -----------------------------------------------*/
+
+    #team {
+        background-color: #f5f8fd;
+        width: 100%;
+        text-align: center;
+        overflow: auto;
+        padding-bottom: 80px;
+    }
+
+    #team .title {
+        padding: 50px 0 0 0 ;
+        font-size: 36px;
+        color: #413e66;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    #team .title_info {
+        width: 30%;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 15px;
+        padding-bottom: 60px;
+        color: #535074;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    #team .members {
+        width: 1140px;
+        height: 255px;
+        margin: 0px auto;
+    }
+
+    #team .members .members_info {
+        width: 255px;
+        height: 255px;
+        float: left;
+        margin:0 auto;
+        position: relative;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #team .members .members_info:nth-child(1) {
+        background-image: url(1.jpg);
+    }
+
+    #team .members .members_info:nth-child(2) {
+        background-image: url(2.jpg);
+    }
+
+    #team .members .members_info:nth-child(3) {
+        background-image: url(3.jpg);
+    }
+
+    #team .members .members_info:nth-child(4) {
+        background-image: url(4.jpg);
+    }
+
+    #team .members .members_info .members_info_name {
+        position: absolute;
+        width: 255px;
+        margin-top: 189px;
+        background: rgba(29, 28, 41, 0.6);
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 10px;
+        padding-bottom: 2px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    #team .members .members_info .members_info_position {
+        position: absolute;
+        width: 255px;
+        margin-top: 223px;
+        padding-bottom: 15px;
+        background: rgba(29, 28, 41, 0.6);
+        font-style: italic;
+        font-size: 13px;
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    /*Our Clients Section
+    -----------------------------------------------*/
+
+    #our_clients {
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        overflow: auto;
+        padding-bottom: 80px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #our_clients .title {
+        padding: 50px 0 0 0 ;
+        font-size: 36px;
+        color: #413e66;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+    }
+
+    #our_clients .logos {
+        width: 1610px;
+        margin: 0px auto;
+    }
+
+    #our_clients .logos .bi {
+        float: left;
+        margin: 50px 25px;
+    }
+
+    #our_clients .circles {
+        position: absolute;
+        left: 49%;
+        width: 55px;
+        clear: both;
+        margin-top: 150px;
+    }
+
+    #our_clients .circles .circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 75px;
+        float: left;
+        margin: 0px 7px;
+    }
+
+    #our_clients .circles .circle:nth-child(1) {
+        background-color: #1bb1dc;
+    }
+
+    #our_clients .circles .circle:nth-child(2) {
+        background-color: #cccccc;
+    }
+
+    /*Pricing Section
+    -----------------------------------------------*/
+
+    #pricing {
+        background-color: #f5f8fd;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    #pricing .title {
+        padding: 50px 0 0 0 ;
+        font-size: 36px;
+        color: #413e66;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    #pricing .title_info {
+        width: 30%;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 15px;
+        padding-bottom: 60px;
+        color: #535074;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    #pricing .rate_systems {
+        width: 1240px;
+        height: 413px;
+        margin: 0px auto;
+
+    }
+
+    #pricing .rate_systems .rating {
+        background-color: #ffffff;
+        border-bottom: 1px solid #cccccc;
+        width: 380px;
+        height: 413px;
+        float: left;
+        margin:0 auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #pricing .rate_systems .rating .price_wrap {
+        width: 380px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .price {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+        padding: 0;
+        font-size: 64px;
+        margin-bottom: 0px;
+        color: #535074;
+        position: relative;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .price .dollar_sign {
+        font-size: 30px;
+        position: absolute;
+        font-weight: 400;
+        color: #535074;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 105px;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .price .month {
+        margin-left: -20px;
+        display:inline-block;
+        font-size: 16px;
+        color: #6c67a3;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .plan {
+        color: #535074;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        margin: 10px 0 20px 0;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .plan_info {
+        padding: 0px;
+        color: #413e66;
+        font-weight: 300;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 35px;
+    }
+
+    #pricing .rate_systems .rating .price_wrap .choose_plan {
+        width: 149px;
+        height: 41px;
+        background-color: #1bb1dc;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-left: 115px;
+        line-height: 41px;
+        color: #ffffff;
+        margin-bottom: -20px;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: "Open Sans", sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="team">
+        <div class="title">Team</div>
+        <div class="title_info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</div>
+        <div class="members">
+            <div class="members_info">
+                <div class="members_info_name">Sugyeong Lee</div>
+                <div class="members_info_position">Chief Executive Officer</div>
+            </div>
+            <div class="members_info">
+                <div class="members_info_name">Seungjae Chung</div>
+                <div class="members_info_position">Product Manager</div>
+            </div>
+            <div class="members_info">
+                <div class="members_info_name">Woochul Shin</div>
+                <div class="members_info_position">CTO</div>
+            </div>
+            <div class="members_info">
+                <div class="members_info_name">Jongin Lee</div>
+                <div class="members_info_position">Accountant</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="our_clients">
+        <div class="title">Our Clients</div>
+        <div class="logos">
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-7.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-8.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-1.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-2.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-3.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-4.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-5.png" width="148" height="66">
+            </div>
+            <div class="bi">
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-6.png" width="148" height="66">
+            </div>
+        </div>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div id="pricing">
+        <div class="title">Pricing</div>
+        <div class="title_info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</div>
+        <div class="rate_systems">
+            <div class="rating">
+                <div class="price_wrap">
+                    <div class="price">
+                        <div class="dollar_sign">$</div>19
+                        <div class="month">/month</div>
+                    </div>
+                    <div class="plan">Basic Plan</div> 
+                    <div class="plan_info">Odio animi voluptates<br />Inventore quisquam et<br />Et perspiciatis suscipit<br />24/7 Support System</div>
+                    <div class="choose_plan" OnClick="location.href ='#'" style="cursor:pointer;">CHOOSE PLAN</div>
+                </div>
+            </div>
+            <div class="rating">
+                <div class="price_wrap">
+                    <div class="price">
+                        <div class="dollar_sign">$</div>29
+                        <div class="month">/month</div>
+                    </div>
+                    <div class="plan">Regular Plan</div> 
+                    <div class="plan_info">Odio animi voluptates<br />Inventore quisquam et<br />Et perspiciatis suscipit<br />24/7 Support System</div>
+                    <div class="choose_plan" OnClick="location.href ='#'" style="cursor:pointer;">CHOOSE PLAN</div>
+                </div>
+            </div>
+            <div class="rating">
+                <div class="price_wrap">
+                    <div class="price">
+                        <div class="dollar_sign">$</div>39
+                        <div class="month">/month</div>
+                    </div>
+                    <div class="plan">Premium Plan</div> 
+                    <div class="plan_info">Odio animi voluptates<br />Inventore quisquam et<br />Et perspiciatis suscipit<br />24/7 Support System</div>
+                    <div class="choose_plan" OnClick="location.href ='#'" style="cursor:pointer;">CHOOSE PLAN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
